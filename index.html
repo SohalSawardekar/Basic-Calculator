@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="cal_frame" style="display: flex; flex-direction: column; ">
+        <div id="display">
+            <input type="text" name="display" id="calc-display" readonly>
+        </div>
+        <div id="buttons">
+            <div id="r01">
+                <button id="r0" onclick="clearDisplay()">Clear</button>
+                <button id="r0" onclick="removeFromdisplay()">Back</button>
+            </div>
+            <div id="r1">
+                <button onclick="appendTodisplay('7')">7</button>
+                <button onclick="appendTodisplay('8')">8</button>
+                <button onclick="appendTodisplay('9')">9</button>
+                <button onclick="appendTodisplay('/')">/</button>
+            </div>
+            <div id="r2">
+                <button onclick="appendTodisplay('4')">4</button>
+                <button onclick="appendTodisplay('5')">5</button>
+                <button onclick="appendTodisplay('6')">6</button>
+                <button onclick="appendTodisplay('*')">*</button>
+            </div>
+            <div id="r3">
+                <button onclick="appendTodisplay('1')">1</button>
+                <button onclick="appendTodisplay('2')">2</button>
+                <button onclick="appendTodisplay('3')">3</button>
+                <button onclick="appendTodisplay('-')">-</button>
+            </div>
+            <div id="r4">
+                <button onclick="appendTodisplay('.')">.</button>
+                <button onclick="appendTodisplay('0')">0</button>
+                <button onclick="calculate()">=</button>
+                <button onclick="appendTodisplay('+')">+</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
